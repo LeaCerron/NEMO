@@ -1,2 +1,2 @@
-web: python NEMO/manage.py runserver 0.0.0.0:$PORT
+web: python manage.py
 heroku ps:scale web=1
