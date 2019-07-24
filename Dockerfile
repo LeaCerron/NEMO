@@ -11,7 +11,7 @@ ENV DJANGO_SETTINGS_MODULE "settings"
 ENV PYTHONPATH "/nemo/"
 COPY gunicorn_configuration.py /etc/
 
-EXPOSE 8000/tcp
+EXPOSE $PORT/tcp
 
 COPY start_NEMO_in_Docker.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/start_NEMO_in_Docker.sh
