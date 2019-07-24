@@ -4,7 +4,7 @@
 
 from multiprocessing import cpu_count
 
-bind = "0.0.0.0:8000"
+bind = "0.0.0.0:$PORT"
 worker_class = 'gthread'
 # The following value was decided based on the Gunicorn documentation and configuration example:
 # http://docs.gunicorn.org/en/stable/configure.html#configuration-file
